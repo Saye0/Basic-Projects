@@ -1,10 +1,16 @@
 import { useState } from 'react'
-import './App.css'
+import Navbar from './Components/Navbar'
+import './app.css'
+import Hero from './Components/Hero'
+import Feature from './Components/Feature'
 
 function App() {
 
   return (
     <>
+      <Navbar />
+      <Hero />
+      <Feature />
     </>
   )
 }
