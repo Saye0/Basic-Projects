@@ -1,7 +1,7 @@
 import React from 'react'
 const Hero = () => {
     return (
-        <div className='p-16 flex flex-col items-center container mx-auto space-y-4'>
+        <div id='Features' className='p-16 flex flex-col items-center container mx-auto space-y-4'>
             <h1 className='text-center text-4xl p-2'>VirtualIR build tools <span className='bg-gradient-to-r from-orange-500 to-orange-800 bg-clip-text text-transparent' >for developers</span></h1>
             <p className='line-clamp-4 text-gray-500 text-center max-w-[600px]'>Empower your creativity and bring your VR app ideas to life with our
                 intuitive development tools. Get started today and turn your imagination

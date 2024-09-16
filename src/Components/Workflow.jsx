@@ -26,7 +26,7 @@ const Workflow = () => {
 
 
     return (
-        <div className='pt-36'>
+        <div className='pt-36' id='Workflow'>
             <h1 className='text-4xl text-center'>Accelerate your{" "}
                 <span className="bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">
                     coding workflow.

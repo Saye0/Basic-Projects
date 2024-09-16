@@ -2,7 +2,12 @@ import React from "react";
 import { Menu, X } from "lucide-react"
 import { useState } from "react";
 const Navbar = () => {
-  const navItems = ["Features", "Workflow", "Pricing", "Testimonials"]
+  const navItems = [
+    { label: "Features", href: "#Features" },
+    { label: "Workflow", href: "#Workflow" },
+    { label: "Pricing", href: "#Pricing" },
+    { label: "Testimonials", href: "#Testimonials" },
+  ];
 
 
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false)
@@ -20,8 +25,10 @@ const Navbar = () => {
           </div>
 
           <ul className="hidden xl:flex items-center space-x-8">
-            {navItems.map((item, i) => (
-              <li key={i}>{item}</li>
+            {navItems.map((item, index) => (
+              <li key={index}>
+                <a href={item.href}>{item.label}</a>
+              </li>
             ))}
           </ul>
 
@@ -42,8 +49,11 @@ const Navbar = () => {
       <div className={`${mobileDrawerOpen ? 'max-h-96 ' : 'max-h-0'
         } overflow-hidden transition-all duration-300 ease-in-out right-0 z-20  w-full  flex flex-col justify-center items-center  space-y-4`}>
         <ul className="flex flex-col items-center mt-4">
-          {navItems.map((item, i) => (
-            <li className=" transition-all duration-200 cursor-pointer font-bold bg-gray-400 hover:bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text" key={i}>{item}</li>
+
+          {navItems.map((item, index) => (
+            <li key={index} className="transition-all duration-200 cursor-pointer font-bold bg-gray-400 hover:bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">
+              <a href={item.href}>{item.label}</a>
+            </li>
           ))}
         </ul>
         <div className="flex  lg:hidden  items-center">

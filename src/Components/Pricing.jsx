@@ -22,6 +22,8 @@ const Pricing = () => {
                 "Web Analytics (Advance)",
                 "Private Mode",
             ],
+            most: true
+
         },
         {
             title: "Enterprise",
@@ -35,12 +37,14 @@ const Pricing = () => {
         },
     ];
     return (
-        <div className='my-12 space-y-10'>
-            <h1 className='text-center text-5xl'>Pricing</h1>
+        <div className=' pt-[106px] space-y-10 ' id='Pricing' >
+            <h1 className='text-center text-5xl' >Pricing</h1>
             <div className='flex justify-center gap-8 flex-wrap'>
                 {pricingOptions.map((item, i) => (
                     <div className='border min-w-[320px] w-1/2 lg:w-1/3  xl:w-1/4 border-gray-400 px-12 py-8 space-y-8 flex flex-col justify-between' key={i}>
-                        <h1 className='text-4xl text-start'>{item.title}</h1>
+                        <h1 className=' text-4xl text-start'>{item.title}{item.most && (
+                            <span className='text-[16px] bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text'>/Most Popular</span>
+                        )}</h1>
                         <div className='text-4xl'>{item.price}
                             <span className='text-sm'> {"\\Month"}</span>
                         </div>
@@ -52,7 +56,7 @@ const Pricing = () => {
                                 </li>
                             ))}
                         </ul>
-                        <button className='px-4 py-1 border border-orange-600 rounded-lg'>Subscribe</button>
+                        <button className='px-4 py-1 border hover:bg-orange-900 border-orange-600 rounded-lg'>Subscribe</button>
                     </div>
                 ))}
             </div>

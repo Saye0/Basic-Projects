@@ -39,11 +39,11 @@ const Testimonials = () => {
         },
     ];
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto pt-[106px]' id='Testimonials'>
             <h1 className='text-center text-4xl pt-10'>What People are saying</h1>
             <div className='flex flex-wrap gap-8 justify-center pt-20'>
                 {testimonials.map((item, i) => (
-                    <div className='bg-neutral-900 min-w-[300px] gap-y-4 rounded-lg flex flex-col justify-between w-1/2 lg:1/3  xl:w-1/4  p-4'>
+                    <div key={i} className='bg-neutral-900 min-w-[300px] gap-y-4 rounded-lg flex flex-col justify-between w-1/2 lg:1/3  xl:w-1/4  p-4'>
                         <p className='line-clamp-4 text-sm md:text-lg md:line-clamp-6'>{item.text}</p>
                         <div className='flex gap-x-3'>
                             <img className='max-w-10 max-h-10 rounded-full' src={item.image} alt="" />

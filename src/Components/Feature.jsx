@@ -35,7 +35,7 @@ const Feature = () => {
     ];
 
     return (
-        <div className='flex flex-col items-center justify-center space-y-6 '>
+        <div className='flex flex-col items-center justify-center space-y-6 ' id='Features'>
             <h1 className='bg-gray-800  text-orange-500 rounded-xl px-4 py-1'>Feature</h1>
             <h1 className='text-[50px] text-center'>Easy build <span className='bg-gradient-to-r from-orange-500 to-orange-800  bg-clip-text text-transparent'>your code</span></h1>
             <div className='flex flex-wrap mt-10 lg:mt-20 gap-4 justify-center items-center '>
