@@ -4,7 +4,7 @@ This repository contains various projects. You can find the details of the proje
 
 ---
 
-## Projects 1: [ Landing Page](#)
+## Projects 1: [ Landing Page](https://github.com/Saye0/Basic-Projects/tree/main/landing-page)
 
 <img src="https://github.com/user-attachments/assets/ddbe5f6b-d7be-4384-b45c-842385cdf7f9" alt="Animation" width="400" />
 
