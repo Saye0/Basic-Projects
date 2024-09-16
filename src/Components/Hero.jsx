@@ -13,13 +13,13 @@ const Hero = () => {
             <div className='flex flex-col lg:flex-row gap-8 '>
 
                 <video className='bg-gradient-to-r from-orange-500 to-orange-800  overflow-hidden  max-w-[300px] max-h-[200px] lg:max-w-[500px] lg:max-h-[400px] border-transparent bg-clip-border border-1 p-[1px] rounded-lg' autoPlay muted loop>
-                    <source src="/" type="video/mp4" />
+                    <source src="video1.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
 
 
                 <video className='bg-gradient-to-r from-orange-500 to-orange-800 overflow-hidden  max-w-[300px] max-h-[200px] lg:max-w-[500px] lg:max-h-[400px] border-transparent bg-clip-border border-1 p-[1px] rounded-lg' autoPlay muted loop>
-                    <source src="/" type="video/mp4" />
+                    <source src="video2.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
 
